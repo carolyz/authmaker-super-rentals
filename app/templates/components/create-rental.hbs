@@ -22,6 +22,7 @@
         {{form.input textarea=true class="flex" label="Description" maxlength=250 passThru=(hash rows=1 maxRows=3) value=description onChange=(action (mut description))}}
       </div>
       <div class="layout-row">
+        {{#paper-button raised=true onClick=(action 'randomize')}}Randomize{{/paper-button}}
         {{#form.submit-button raised=true accent=true}}Submit{{/form.submit-button}}
         {{#if hasError}}
           <div class="alert alert--error layout-row">
