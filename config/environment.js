@@ -29,6 +29,12 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    // ENV['ember-cli-mirage'] = {
+    //   enabled: false
+    // }
+
+
   }
 
   if (environment === 'test') {
@@ -44,11 +50,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // use mirage in production too since the app will break
-    // if there is no API for Ember Data
-    ENV['ember-cli-mirage'] = {
-      enabled: true
-    }
+    // production options go here
   }
 
   return ENV;
