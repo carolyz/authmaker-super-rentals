@@ -4,7 +4,10 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    fingerprint: {
+      // preventing image fingerprint
+      extensions: ['js', 'css', 'map']
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated

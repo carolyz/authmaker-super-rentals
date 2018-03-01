@@ -14,7 +14,7 @@ export default Component.extend({
       categoryOptions: ['Estate', 'Condo', 'Townhouse', 'Apartment', 'House'],
       bedrooms: 0, // default bedroom #
       city: '',
-      image: 'assets/images/rental_default.png', // placeholder default
+      image: '/assets/images/rental_default.png', // placeholder default
       description: '',
       hasError: false,
     });
