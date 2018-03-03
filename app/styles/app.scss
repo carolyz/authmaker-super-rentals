@@ -78,3 +78,17 @@ $warn: 'amber';
 .edit-rental-dialog {
   width: 100%;
 }
+
+.listing--featured {
+  .ribbon-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    height: 25px;
+    width: 100%;
+    background-image: url("/assets/images/ribbon-featured.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
+  }
+}
