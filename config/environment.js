@@ -50,7 +50,12 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // production options go here
+    // enable faker in production
+    ENV['ember-faker'] = {
+      enabled: true
+    };
+
+
   }
 
   return ENV;
