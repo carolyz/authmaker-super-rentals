@@ -24,6 +24,7 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
+    ENV.authmaker = { domainUrl: "https://super-rentals.authmaker.com", redirectUri: "http://localhost:4200/login", clientId: "7e27d256569a8d7281ee2188a42c5d9321a2b46c" };
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
     // ENV.APP.LOG_TRANSITIONS = true;
