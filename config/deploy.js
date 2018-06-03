@@ -1,8 +1,8 @@
 /* eslint-env node */
 'use strict';
 
-const gcloudProjectId = '** YOUR PROJECT ID **';
-const productionBucket = '** YOUR BUCKET HERE **';
+const gcloudProjectId = 'astonishing-asparagus';
+const productionBucket = 'astonishing-asparagus';
 
 module.exports = function(deployTarget) {
   let ENV = {
